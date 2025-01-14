@@ -44,7 +44,7 @@ else if(weatherData?.weather?.[0]?.description === "haze")
   return (
     <>
 
-      <div className='main w-[500px] m-auto p-7 text-center'>
+      <div className='main md:max-w-[500px] w-screen m-auto md:p-7 text-center p-2'>
        
        <div className='input_div'>
        <i class="fa-solid fa-magnifying-glass serch"></i>
@@ -62,7 +62,7 @@ else if(weatherData?.weather?.[0]?.description === "haze")
 
   <p className='state_name'>{weatherData?.name} {weatherData?.sys?.country}</p>
 
-<p className='text-lg time'>
+<p className='md:text-lg text-sm time'>
   {time.toLocaleString('en-US', {
     weekday: 'long',
     year: 'numeric',

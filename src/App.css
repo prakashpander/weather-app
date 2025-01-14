@@ -4,9 +4,22 @@
   background-size: cover;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 .main {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border-radius: 10px;
+}
+
+.divv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .pp {
@@ -15,20 +28,23 @@
 
 .input_div {
   display: flex;
+  background-color: black;
+  width: fit-content;
+  color: whitesmoke;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 10px;
+  border-radius: 10px;
 }
 
 input {
   outline: none;
   background-color: black;
-  color: whitesmoke;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
 }
 
 .serch {
-  background-color: black;
-  color: whitesmoke;
-  padding: 10px 5px 0px 10px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -98,9 +114,21 @@ button {
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
   width: 190px;
   gap: 10px;
-  padding: 10px;
+  padding: 10px 5px;
   border: 2px solid;
   border-radius: 10px;
+}
+
+@media (width <= 768px) {
+  .dd{
+        width: 164px;
+        gap: 5px;
+        padding: 10px 5px;
+        border: 2px solid;
+        border-radius: 10px;
+        margin-left: 1px;
+  }
+  
 }
 
 .icon {
@@ -112,10 +140,9 @@ button {
   margin-bottom: 5px;
 }
 
-.divv{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
 }
