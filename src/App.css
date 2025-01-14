@@ -1,0 +1,121 @@
+#root {
+  background-image: url(https://img.freepik.com/free-vector/cloud-background-pastel-paper-cut-design-vector_53876-135919.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 10px;
+}
+
+.pp {
+  flex-direction: column;
+}
+
+.input_div {
+  display: flex;
+}
+
+input {
+  outline: none;
+  background-color: black;
+  color: whitesmoke;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.serch {
+  background-color: black;
+  color: whitesmoke;
+  padding: 10px 5px 0px 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+input::placeholder {
+  color: white;
+  font-weight: bold;
+}
+
+button {
+  padding: 5px 5px;
+  margin-left: 2px;
+  background-color: rgb(214, 207, 207);
+  border-radius: 5px;
+}
+
+.state_name {
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.time {
+  font-weight: bolder;
+}
+
+.weather {
+  background-color: rgba(100, 96, 96, 0.637);
+  color: white;
+  border-radius: 50px;
+  margin: 10px;
+  width: fit-content;
+  padding: 10px 20px;
+  transition: .5s;
+}
+.weather:hover{
+  background-color: black;
+}
+.weather-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: rgb(118, 131, 131);
+}
+
+.min_max {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px;
+}
+
+.sun_icon {
+  color: yellow;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.mist {
+  font-size: 40px;
+  color: rgb(233, 233, 181);
+  padding-bottom: 10px;
+}
+
+.dd {
+  display: flex;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  width: 190px;
+  gap: 10px;
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.icon {
+  padding-top: 5px;
+}
+
+.dd_secon {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.divv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
