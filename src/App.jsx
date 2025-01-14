@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
 
-  const [weatherData, setWeatherData] = useState(null);
+  const [weatherData, setWeatherData ] = useState(null);
   const [error, setError] = useState(null);
   const [city, setCity] = useState("");
   const [time, setTime] = useState(new Date());
@@ -74,11 +74,11 @@ else if(weatherData?.weather?.[0]?.description === "haze")
         <p className='weather'>{weatherData?.weather?.[0]?.description || "N/A"}</p>
         <div>{weatherIcon()}</div>
    
-        <p className='temp'>{weatherData?.main?.temp || "N/A"}°C</p>
+        <p className='temp'>{(weatherData?.main?.temp - 273.15).toFixed(2) || "N/A"}°C</p>
 
       <div className='min_max'>
-      <p>Min : {weatherData?.main?.temp_min || "N/A"}</p>
-      <p>Max : {weatherData?.main?.temp_max || "N/A"}</p>
+      <p>Min : {(weatherData?.main?.temp_min - 273.15).toFixed(2) || "N/A"}</p>
+      <p>Max : {(weatherData?.main?.temp_max - 273.15).toFixed(2) || "N/A"}</p>
       </div>
 
   <div className='flex justify-evenly feel_div w-[95%]'>
